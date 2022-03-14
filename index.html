@@ -16,11 +16,11 @@
             <input type="text" placeholder="Nuovo Todo" class="borderCircle input">
             <button @click="pushObj" class="borderCircle btnAdd">Aggiungi</button>
         </div>
-        <div v-for="todo in arrToDo" class=" borderCircle toDoContainer">
+        <div v-for="(todo, index) in arrToDo" class=" borderCircle toDoContainer">
             <div class="">
                 <div class="toDo">
                     <div @click="todo.done = true" :class="(todo.done === true) ? 'sbarrato' : '' ">{{ todo.text }}</div>
-                    <i class="fa-solid fa-xmark"></i>
+                    <i @click="removeObj()" class="fa-solid fa-xmark"></i>
                 </div>
                 <hr>
             </div>

@@ -2,9 +2,7 @@ const app = new Vue ({
     el: '#root',
     data: {
         arrToDo: [
-            {
-                text: 'aiuto',
-            },
+            
         ],
     },
     methods: {
@@ -18,6 +16,10 @@ const app = new Vue ({
             this.arrToDo.push(todo);
             console.log(todo);
         },
+
+        removeObj() {
+            this.arrToDo.splice(this.index, 1);
+        }
 
     }
 });
