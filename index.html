@@ -11,34 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <main class="root">
+    <main id="root">
         <div class="addContainer">
             <input type="text" placeholder="Nuovo Todo" class="borderCircle input">
-            <button class="borderCircle btnAdd">Aggiungi</button>
+            <button @click="pushObj" class="borderCircle btnAdd">Aggiungi</button>
         </div>
-        <div class="borderCircle toDoContainer">
-            <div>
+        <div v-for="todo in arrToDo" class=" borderCircle toDoContainer">
+            <div class="">
                 <div class="toDo">
-                    <div>Fare i compiti</div>
+                    <div @atclick="todo.done = true" :class="todo.done == true ? ">{{ todo.text }}</div>
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <hr>
             </div>
-            <div>
-                <div class="toDo">
-                    <div>Fare i compiti</div>
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <hr>
-            </div>
-            <div>
-                <div class="toDo">
-                    <div>Fare i compiti</div>
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <hr>
-            </div>
-            
         </div>
     </main>
 
