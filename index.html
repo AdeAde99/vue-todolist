@@ -19,7 +19,7 @@
         <div v-for="todo in arrToDo" class=" borderCircle toDoContainer">
             <div class="">
                 <div class="toDo">
-                    <div @atclick="todo.done = true" :class="todo.done == true ? ">{{ todo.text }}</div>
+                    <div @click="todo.done = true" :class="(todo.done === true) ? 'sbarrato' : '' ">{{ todo.text }}</div>
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <hr>

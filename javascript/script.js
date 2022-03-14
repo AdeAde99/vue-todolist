@@ -17,6 +17,7 @@ const app = new Vue ({
             }
             this.arrToDo.push(todo);
             console.log(todo);
-        }
+        },
+
     }
 });
