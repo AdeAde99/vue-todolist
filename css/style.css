@@ -1,0 +1,62 @@
+:root {
+    --grigioChiaro: #efefef;
+    font-family: sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.borderCircle {
+    border-radius: 1rem;
+}
+
+.btnAdd {
+    background-color: var(--grigioChiaro);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.toDoContainer {
+    background-color: var(--grigioChiaro);
+    min-width: 20rem;
+    width: 40%;
+    padding: 1rem;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+.addContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.toDo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.input {
+    padding: 1rem;
+}
+
+hr {
+    margin: auto;
+}
+

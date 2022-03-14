@@ -8,15 +8,37 @@
     <title>Vue-todolist</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <main>
-        <div>
-            <input type="text" placeholder="Nuovo Todo">
-            <button>Aggiungi</button>
+    <main class="root">
+        <div class="addContainer">
+            <input type="text" placeholder="Nuovo Todo" class="borderCircle input">
+            <button class="borderCircle btnAdd">Aggiungi</button>
         </div>
-        <div>
-            <div>Fare i compiti</div>
+        <div class="borderCircle toDoContainer">
+            <div>
+                <div class="toDo">
+                    <div>Fare i compiti</div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <hr>
+            </div>
+            <div>
+                <div class="toDo">
+                    <div>Fare i compiti</div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <hr>
+            </div>
+            <div>
+                <div class="toDo">
+                    <div>Fare i compiti</div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <hr>
+            </div>
+            
         </div>
     </main>
 
