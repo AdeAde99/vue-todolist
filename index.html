@@ -13,7 +13,7 @@
 <body>
     <main id="root">
         <div class="addContainer">
-            <input type="text" placeholder="Nuovo Todo" class="borderCircle input">
+            <input @keyup.enter="pushObj()" type="text" placeholder="Nuovo Todo" class="borderCircle input">
             <button @click="pushObj" class="borderCircle btnAdd">Aggiungi</button>
         </div>
         <div v-for="(todo, index) in arrToDo" class=" borderCircle toDoContainer">
